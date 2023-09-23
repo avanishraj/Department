@@ -1,0 +1,53 @@
+server:
+  port: 8082
+
+#spring:
+#  profiles:
+#    active: dev
+
+---
+
+spring:
+#  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: prince
+    url: jdbc:mysql://localhost:3306/department_avanish
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+welcome:
+  message: '"welcome avanish raj"'
+
+#---
+#
+#
+#spring:
+#  profiles: qa
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: prince
+#    url: jdbc:mysql://localhost:3306/department-qa
+#    username: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#welcome:
+#  message: '"welcome avanish raj"'
+#
+#
+#---
+#
+#spring:
+#  profiles: production
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: prince
+#    url: jdbc:mysql://localhost:3306/department-production
+#    username: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#welcome:
+#  message: '"welcome avanish raj"'
